@@ -1,0 +1,235 @@
+export interface CourseSchedule {
+  date: string;
+  time: string;
+  price: string;
+  originalPrice: string;
+  mode: string;
+  instructor: string;
+}
+
+export interface Course {
+  id: string;
+  title: string;
+  shortTitle: string;
+  category: "scrum-master" | "product-owner" | "agile-coaching" | "safe" | "project-management";
+  badge: string;
+  description: string;
+  overview: string;
+  keyFeatures: string[];
+  courseContent: string[];
+  whoShouldAttend: string[];
+  schedules: CourseSchedule[];
+  faq: { question: string; answer: string }[];
+}
+
+export const courses: Course[] = [
+  {
+    id: "psm-1",
+    title: "Professional Scrum Master I",
+    shortTitle: "PSM I",
+    category: "scrum-master",
+    badge: "Best Seller",
+    description: "Experience 100% confidence in exceeding your expectations, supported by a remarkable 5/5 rating for our online Agile & Scrum training.",
+    overview: "The Professional Scrum Master™ (PSM I) course is a dynamic and engaging learning experience designed to provide students with a comprehensive understanding of Professional Scrum and the crucial role of the Scrum Master within Agile teams. This interactive and activity-based training program offers a well-rounded education by blending insightful discussions with practical exercises.\n\nThroughout the course, students dive deep into the core principles of Scrum and the broader Agile philosophy, gaining valuable insights into the mechanics and dynamics of Scrum Teams.",
+    keyFeatures: [
+      "2-day virtual classroom training",
+      "Trained by an experienced PST",
+      "PSM-I exam fees included",
+      "14 SEUs and PDUs included",
+      "Certification Body: Scrum.org",
+      "Soft copy of the course material",
+      "Case studies, role plays, and simulations",
+      "Community channel to continue collaborating",
+      "1:1 coaching after training on a need basis",
+      "Discount for future courses",
+    ],
+    courseContent: [
+      "Help Scrum Teams deliver value to their organization",
+      "Understand the theory and principles behind Scrum and empiricism",
+      "Understand how each part of the Scrum framework ties back to the principles and theory",
+      "Understand uncertainty and complexity in product delivery",
+      "Understand the meaning and importance of the Scrum values",
+      "Learn what Done means and why it is crucial to transparency",
+      "Know how to use the Product Backlog to plan with agility",
+      "Understand the importance of self-managing teams and the Scrum Master role",
+      "Clarify the leadership role a Scrum Master plays on the team",
+      "Learn the skills, traits, and behavior shifts required to be a Scrum Master",
+    ],
+    whoShouldAttend: [
+      "Practitioners interested in starting a career as a Scrum Master",
+      "Scrum Masters, Agile/Scrum Coaches and consultants looking to improve their use of Scrum",
+      "Anyone involved in product delivery using Scrum",
+    ],
+    schedules: [
+      { date: "Mar 14th - 15th, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹18,000", originalPrice: "₹21,000", mode: "Online", instructor: "Expert Trainer" },
+      { date: "Mar 28th - 29th, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹18,000", originalPrice: "₹21,000", mode: "Online", instructor: "Expert Trainer" },
+    ],
+    faq: [
+      { question: "How many attempts do I get for the exam?", answer: "Two Attempts. All participants completing the course will receive a password to attempt the first assessment. Those who attempt within 14 days and do not score at least 85% will be granted a 2nd attempt at no additional cost." },
+      { question: "Does my PSM certificate expire?", answer: "Unlike other certifications, your certificate is lifelong and does not require any additional payments or renewals." },
+      { question: "How will I obtain proof of payment?", answer: "After placing your order, you will receive a confirmation email with a link to download your invoice as a PDF." },
+    ],
+  },
+  {
+    id: "psm-2",
+    title: "Professional Scrum Master Advanced",
+    shortTitle: "PSM II",
+    category: "scrum-master",
+    badge: "Advanced",
+    description: "Take your Scrum Master skills to the next level with advanced facilitation, coaching, and leadership techniques.",
+    overview: "The Professional Scrum Master II (PSM II) course is designed for Scrum Masters who have a thorough understanding of the Scrum framework and want to deepen their knowledge and skills. This advanced course focuses on the Scrum Master as a servant-leader and helps participants understand the stances that characterize an effective Scrum Master.",
+    keyFeatures: ["2-day advanced training", "PSM-II exam fees included", "Advanced facilitation techniques", "Leadership and coaching skills", "Real-world case studies", "Community access"],
+    courseContent: ["Advanced Scrum Master stances", "Facilitating complex team dynamics", "Organizational change management", "Scaling Scrum", "Advanced coaching techniques"],
+    whoShouldAttend: ["Experienced Scrum Masters", "Agile Coaches", "Team leads transitioning to Scrum"],
+    schedules: [{ date: "Apr 11th - 12th, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹25,000", originalPrice: "₹30,000", mode: "Online", instructor: "Expert Trainer" }],
+    faq: [{ question: "Do I need PSM I to take this course?", answer: "While not required, having PSM I certification or equivalent experience is strongly recommended." }],
+  },
+  {
+    id: "psm-ai",
+    title: "Professional Scrum Master™ - AI Essentials",
+    shortTitle: "PSM-AI",
+    category: "scrum-master",
+    badge: "New",
+    description: "Learn how to leverage AI tools and techniques within the Scrum framework to enhance team productivity.",
+    overview: "This cutting-edge course combines Professional Scrum with AI essentials, teaching Scrum Masters how to integrate artificial intelligence tools into their workflows for enhanced team performance and decision-making.",
+    keyFeatures: ["AI tools for Scrum Masters", "Practical AI exercises", "Exam fees included", "Hands-on workshops"],
+    courseContent: ["AI fundamentals for Agile teams", "Using AI in Sprint Planning", "AI-powered retrospectives", "Data-driven decision making"],
+    whoShouldAttend: ["Scrum Masters wanting to leverage AI", "Tech leads", "Product teams"],
+    schedules: [{ date: "Apr 25th - 26th, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹22,000", originalPrice: "₹26,000", mode: "Online", instructor: "Expert Trainer" }],
+    faq: [{ question: "Do I need AI experience?", answer: "No prior AI experience is needed. The course covers fundamentals." }],
+  },
+  {
+    id: "pspo-1",
+    title: "Professional Scrum Product Owner I",
+    shortTitle: "PSPO I",
+    category: "product-owner",
+    badge: "Best Seller",
+    description: "Master the Product Owner role and learn to maximize the value delivered by Scrum Teams.",
+    overview: "The Professional Scrum Product Owner (PSPO I) course focuses on the critical role of the Product Owner in the Scrum framework. Learn how to bridge business strategy and product execution to maximize value delivery.",
+    keyFeatures: ["2-day virtual classroom training", "PSPO-I exam fees included", "Product backlog management", "Stakeholder engagement techniques", "Value maximization strategies", "1:1 coaching"],
+    courseContent: ["Agile Product Management", "Product Backlog Management", "Stakeholder Management", "Release Planning", "Value-driven development", "Scrum framework for Product Owners"],
+    whoShouldAttend: ["Aspiring Product Owners", "Business Analysts", "Product Managers", "Entrepreneurs"],
+    schedules: [{ date: "Mar 21st - 22nd, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹18,000", originalPrice: "₹21,000", mode: "Online", instructor: "Expert Trainer" }],
+    faq: [{ question: "Is this course suitable for beginners?", answer: "Yes, this course is designed for anyone looking to understand and excel in the Product Owner role." }],
+  },
+  {
+    id: "pspo-2",
+    title: "Advanced Professional Scrum Product Owner II",
+    shortTitle: "PSPO II",
+    category: "product-owner",
+    badge: "Advanced",
+    description: "Advance your Product Owner skills with deeper product management and stakeholder strategies.",
+    overview: "PSPO II is an advanced course for experienced Product Owners who want to grow their skills in product management, stakeholder engagement, and value delivery within complex environments.",
+    keyFeatures: ["Advanced product strategies", "PSPO-II exam included", "Complex stakeholder management", "Scaling product ownership"],
+    courseContent: ["Advanced product vision", "Product strategy & roadmapping", "Evidence-based management", "Complex stakeholder landscapes"],
+    whoShouldAttend: ["Experienced Product Owners", "Senior Product Managers", "Product leaders"],
+    schedules: [{ date: "May 2nd - 3rd, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹25,000", originalPrice: "₹30,000", mode: "Online", instructor: "Expert Trainer" }],
+    faq: [{ question: "Prerequisites?", answer: "PSPO I or equivalent experience recommended." }],
+  },
+  {
+    id: "pspo-ai",
+    title: "Professional Scrum Product Owner™ - AI Essentials",
+    shortTitle: "PSPO-AI",
+    category: "product-owner",
+    badge: "New",
+    description: "Integrate AI into product ownership for smarter backlog management and data-driven decisions.",
+    overview: "This course teaches Product Owners how to leverage AI for better product decisions, backlog prioritization, and stakeholder communication.",
+    keyFeatures: ["AI for product decisions", "Data-driven prioritization", "Exam included", "Practical workshops"],
+    courseContent: ["AI in product management", "AI-powered analytics", "Smart backlog management", "Predictive planning"],
+    whoShouldAttend: ["Product Owners", "Product Managers", "Business leaders"],
+    schedules: [{ date: "May 16th - 17th, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹22,000", originalPrice: "₹26,000", mode: "Online", instructor: "Expert Trainer" }],
+    faq: [{ question: "AI background needed?", answer: "No, the course starts from fundamentals." }],
+  },
+  {
+    id: "icp-acc",
+    title: "ICAgile Certified Professional - Agile Coaching (ICP-ACC)",
+    shortTitle: "ICP-ACC",
+    category: "agile-coaching",
+    badge: "Popular",
+    description: "Become a certified Agile Coach with ICAgile's comprehensive coaching certification program.",
+    overview: "The ICP-ACC certification course provides a deep understanding of the Agile coaching competencies. Learn professional coaching skills, mentoring, and facilitation techniques to guide teams and organizations through Agile transformations.",
+    keyFeatures: ["ICAgile certification included", "Professional coaching skills", "Mentoring frameworks", "Team facilitation techniques", "Organizational change"],
+    courseContent: ["Agile coaching mindset", "Professional coaching skills", "Mentoring vs Coaching", "Team dynamics", "Conflict resolution", "Organizational coaching"],
+    whoShouldAttend: ["Aspiring Agile Coaches", "Scrum Masters wanting coaching skills", "Leaders driving Agile transformation"],
+    schedules: [{ date: "Apr 4th - 5th, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹35,000", originalPrice: "₹40,000", mode: "Online", instructor: "Expert Trainer" }],
+    faq: [{ question: "Is this recognized globally?", answer: "Yes, ICAgile certifications are recognized worldwide." }],
+  },
+  {
+    id: "leading-safe",
+    title: "Leading SAFe Course",
+    shortTitle: "SA",
+    category: "safe",
+    badge: "Trending",
+    description: "Learn to lead a Lean-Agile enterprise by leveraging the Scaled Agile Framework® (SAFe®).",
+    overview: "Leading SAFe provides the principles and practices of the Scaled Agile Framework to drive Lean-Agile transformation at enterprise scale. Learn to lead teams-of-teams and support program execution.",
+    keyFeatures: ["SAFe Agilist certification exam", "Enterprise Agile transformation", "Lean-Agile leadership", "PI Planning facilitation", "Value stream mapping"],
+    courseContent: ["SAFe principles", "Lean-Agile mindset", "PI Planning", "Agile Release Trains", "Value Streams", "Lean Portfolio Management"],
+    whoShouldAttend: ["Executives and leaders", "Managers", "Consultants", "Agile coaches scaling Agile"],
+    schedules: [{ date: "Mar 28th - 29th, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹30,000", originalPrice: "₹35,000", mode: "Online", instructor: "Expert Trainer" }],
+    faq: [{ question: "What certification do I receive?", answer: "You'll be eligible for the SAFe® Agilist (SA) certification." }],
+  },
+  {
+    id: "ssm",
+    title: "SAFe® Scrum Master Certification (SSM)",
+    shortTitle: "SSM",
+    category: "safe",
+    badge: "Popular",
+    description: "Become a certified SAFe® Scrum Master and learn to facilitate Agile team events at scale.",
+    overview: "The SAFe® Scrum Master course equips attendees with the skills to facilitate Scrum events within a SAFe® environment, coaching teams, and enabling value delivery at the program level.",
+    keyFeatures: ["SSM certification exam", "SAFe team facilitation", "Agile at scale", "Iteration planning"],
+    courseContent: ["SAFe Scrum Master role", "Facilitating iteration execution", "Coaching the Agile team", "Supporting PI Planning"],
+    whoShouldAttend: ["Scrum Masters in SAFe environments", "Team leads", "Agile practitioners scaling"],
+    schedules: [{ date: "Apr 18th - 19th, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹28,000", originalPrice: "₹33,000", mode: "Online", instructor: "Expert Trainer" }],
+    faq: [{ question: "Difference from PSM?", answer: "SSM focuses on Scrum within the SAFe® enterprise framework, while PSM is framework-agnostic." }],
+  },
+  {
+    id: "safe-popm",
+    title: "SAFe Product Owner Product Manager (POPM)",
+    shortTitle: "POPM",
+    category: "safe",
+    badge: "Trending",
+    description: "Master the dual role of Product Owner and Product Manager within the SAFe® framework.",
+    overview: "Learn how to effectively perform the Product Owner and Product Manager roles within a SAFe® Lean-Agile enterprise. Understand how to write epics, capabilities, features, and stories within the SAFe context.",
+    keyFeatures: ["POPM certification exam", "Dual role mastery", "SAFe product management", "Backlog management at scale"],
+    courseContent: ["SAFe PO/PM roles", "Writing epics and features", "PI Planning from PO perspective", "Customer centricity"],
+    whoShouldAttend: ["Product Owners", "Product Managers", "Business Analysts in SAFe"],
+    schedules: [{ date: "May 9th - 10th, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹28,000", originalPrice: "₹33,000", mode: "Online", instructor: "Expert Trainer" }],
+    faq: [{ question: "Is SAFe experience required?", answer: "Basic understanding of Agile is recommended but not mandatory." }],
+  },
+  {
+    id: "prince2",
+    title: "Prince2 Foundation Practitioner Certification",
+    shortTitle: "PRINCE2",
+    category: "project-management",
+    badge: "Classic",
+    description: "Master the PRINCE2 methodology for structured project management excellence.",
+    overview: "PRINCE2 (Projects IN Controlled Environments) is a structured project management method widely used globally. This course covers both Foundation and Practitioner levels, giving you a complete understanding of the methodology.",
+    keyFeatures: ["Foundation & Practitioner exams", "Globally recognized certification", "Structured project management", "Real-world case studies"],
+    courseContent: ["PRINCE2 principles", "PRINCE2 themes", "PRINCE2 processes", "Tailoring PRINCE2", "Business case development"],
+    whoShouldAttend: ["Project Managers", "Team leads", "Anyone managing projects"],
+    schedules: [{ date: "Apr 25th - 27th, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹32,000", originalPrice: "₹38,000", mode: "Online", instructor: "Expert Trainer" }],
+    faq: [{ question: "How many days is this course?", answer: "This is a 3-day intensive course covering both Foundation and Practitioner levels." }],
+  },
+  {
+    id: "pmp",
+    title: "Project Management Professional (PMP)",
+    shortTitle: "PMP",
+    category: "project-management",
+    badge: "Best Seller",
+    description: "Earn the globally recognized PMP® certification and advance your project management career.",
+    overview: "The PMP® certification is the gold standard in project management. This comprehensive course prepares you for the PMP exam while equipping you with practical project management skills applicable across industries.",
+    keyFeatures: ["35 contact hours (PDUs)", "PMP exam preparation", "Practice exams included", "Real-world scenarios", "Study materials provided"],
+    courseContent: ["Project initiation & planning", "Project execution", "Monitoring & controlling", "Agile & hybrid approaches", "Stakeholder management", "Risk management"],
+    whoShouldAttend: ["Experienced project managers", "Program managers", "Team leads seeking PMP"],
+    schedules: [{ date: "May 2nd - 4th, 2026", time: "9:30 AM - 4:30 PM IST", price: "₹35,000", originalPrice: "₹42,000", mode: "Online", instructor: "Expert Trainer" }],
+    faq: [{ question: "What are the PMP prerequisites?", answer: "You need a 4-year degree with 3 years of project management experience, or a high school diploma with 5 years of experience." }],
+  },
+];
+
+export const courseCategories = [
+  { key: "scrum-master", label: "Scrum Master" },
+  { key: "product-owner", label: "Product Owner" },
+  { key: "agile-coaching", label: "Agile Coaching" },
+  { key: "safe", label: "SAFe®" },
+  { key: "project-management", label: "Project Management" },
+] as const;
