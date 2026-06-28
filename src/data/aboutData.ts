@@ -6,9 +6,9 @@ export const aboutContent = {
     title: "About Us",
   },
   welcome: {
-    title: "Welcome to digitaldimna",
+    title: "Welcome to DigitalDimna",
     paragraphs: [
-      "At digitaldimna, we empower organizations to realize their true potential toward delivering service that their customers value.",
+      "At DigitalDimna, we empower organizations to realize their true potential toward delivering service that their customers value.",
       "Our mission is to help organizations that are ready to transform & develop to be successful and stay relevant in the market. We coach and train leaders to begin their organizational transformation journey and help them tailor their learning toward the journey."
     ]
   },
