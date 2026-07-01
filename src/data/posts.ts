@@ -13,7 +13,7 @@ export interface Post {
 export const posts: Post[] = [
   {
     slug: "scrum-masters-who-ignore-ai-will-be-unemployable-by-2026",
-    title: "Scrum Masters Who Ignore AI Will Be Unemployable by 2026",
+    title: "Scrum Masters - Choosing a right career ",
     excerpt: "The role of Scrum Masters is evolving rapidly. Those who fail to integrate AI into their workflow risk being left behind in an increasingly automated world.",
     content: `The landscape of agile project management is undergoing a seismic shift. Artificial Intelligence is no longer a futuristic concept—it's here, and it's transforming how teams operate.
 
