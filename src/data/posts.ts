@@ -15,8 +15,7 @@ export const posts: Post[] = [
     slug: "scrum-masters-who-ignore-ai-will-be-unemployable-by-2026",
     title: "Scrum Masters - Choosing a right career ",
     excerpt: "The role of Scrum Masters is evolving rapidly. Those who fail to integrate AI into their workflow risk being left behind in an increasingly automated world.",
-    content: "## Thinking About a Career in Agile? Here's Where to Start"
-## Thinking About a Career in Agile? Here's Where to Start
+    content: `## Thinking About a Career in Agile? Here's Where to Start
 
 Choosing the right career path isn't always straightforward — and if you've been wondering whether Agile is worth exploring, you've landed in the right place.
 By the time you finish reading, you'll have clarity on:
@@ -26,8 +25,7 @@ By the time you finish reading, you'll have clarity on:
 •	The path to becoming a Scrum Master
 •	And more
 
-We'll also break down a real-world Scrum Master job description so you can see what companies typically expect from someone in this role today.
-
+We'll also break down a real-world Scrum Master job description so you can see what companies typically expect from someone in this role today.'
 ## So, What Exactly Is Scrum?
 
 At its core, Scrum is a lightweight framework designed to help teams tackle complex problems through small, adaptive steps rather than one big rigid plan. Think of it as a way of working in short cycles — building, testing, learning, and adjusting — rather than trying to map out every detail upfront.
@@ -40,12 +38,15 @@ A common misconception is that Scrum is strict or inflexible. In reality, it's t
 
 Curious about the name? "Scrum" actually comes from rugby, where it refers to a tightly packed formation of players working together toward a single goal. Fitting, considering how central teamwork is to the whole framework.
 
-Now that we've covered the basics of Scrum, let's dig into the role that keeps it all running smoothly — the Scrum Master.
-The future belongs to Scrum Masters who view AI as a partner, not a threat.`,
+Now that we've covered the basics of Scrum, let's dig into the role that keeps it all running smoothly — the Scrum Master
+
+The future belongs to Scrum Masters who view AI as a partner, not a threat.
+`,
+
     image: "/placeholder.svg",
-    author: "Rahul Sharma",
+    author: "Chandan Kumar",
     date: "2026-03-01",
-    category: "Agile & AI",
+    category: "Scrum Master",
     readTime: "5 min read",
   },
   {
