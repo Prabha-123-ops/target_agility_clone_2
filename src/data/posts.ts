@@ -15,8 +15,7 @@ export const posts: Post[] = [
     slug: "scrum-masters-who-ignore-ai-will-be-unemployable-by-2026",
     title: "Scrum Masters - Choosing a right career ",
     excerpt: "The role of Scrum Masters is evolving rapidly. Those who fail to integrate AI into their workflow risk being left behind in an increasingly automated world.",
-    content: `The landscape of agile project management is undergoing a seismic shift. Artificial Intelligence is no longer a futuristic concept—it's here, and it's transforming how teams operate.
-
+    content: "## Thinking About a Career in Agile? Here's Where to Start"
 ## Thinking About a Career in Agile? Here's Where to Start
 
 Choosing the right career path isn't always straightforward — and if you've been wondering whether Agile is worth exploring, you've landed in the right place.
