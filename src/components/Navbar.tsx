@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="bg-card shadow-sm sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <Link to="/" className="font-heading font-bold text-2xl text-primary">
-          digitaldimna
+          DigitalDimna
         </Link>
 
         <div className="hidden lg:flex items-center gap-8">
