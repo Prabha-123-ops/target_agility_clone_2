@@ -13,8 +13,8 @@ export interface Post {
 export const posts: Post[] = [
   {
     slug: "Scrum Masters - Choosing a right career",
-    title: "Scrum Masters - Choosing a right career ",
-    excerpt: "The role of Scrum Masters is evolving rapidly. Those who fail to integrate AI into their workflow risk being left behind in an increasingly automated world.",
+    title: "Understanding the Definition of Done (DoD) in Scrum ",
+    excerpt: "One of the most important concepts every Scrum Master should understand is the Definition of Done (DoD).",
     content: `## Understanding the Definition of Done (DoD) in Scrum: A Complete Guide for Every Scrum Master
 
 ## Table of Contents
